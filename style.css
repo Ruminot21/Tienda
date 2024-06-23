@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#container {
+    background-color: rgba(251, 251, 251, 0.866);
+    min-width: 320px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+#sideBar {
+    max-width: 350px;
+    background-color: aliceblue;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#logo {
+    height: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnMenu {
+    text-align: end;
+    font-size: 35px;
+    cursor: pointer;
+}
+#navBar  {
+height: 750px;
+}
+#navBar li {
+    padding: 6px 10px;
+    margin: 10px 0;
+    background-color: rgba(184, 184, 184, 0.189);    
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+#navBar li:hover {
+    background-color: rgba(0, 68, 255, 0.583); 
+    color: aliceblue;
+}
+.sair ul li {
+    padding: 6px 10px;
+    margin: 10px 0;
+    background-color: rgba(184, 184, 184, 0.189);    
+    border-radius: 20px;
+    cursor: pointer;
+}
+.sair ul li:hover {
+    background-color: rgba(0, 68, 255, 0.583); 
+}
+#contents {
+    background-color: rgba(240, 240, 240, 0.39);
+    width: 100%;
+    padding: 10px;
+}
+#topBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+#search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#search input {
+    width: 470px;
+    height: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.197);
+    border-radius: 20px;
+    padding: 10px;
+    color: rgba(6, 6, 6, 0.712)
+}
+#topBar i {
+    font-size: 25px;
+    cursor: pointer;
+}
+#contentsProfile {
+    display: flex;
+    justify-content: space-between;
+}
+#contentsProfile i {
+    padding: 5px;
+    margin: 1px;
+}
+#contentsPane {
+    height: calc(92vh);
+}
+#contentsPane h1 {
+    color: rgba(0, 0, 0, 0.564);
+    padding: 10px;
+}
+#cardsRaffles {
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+
+}
+.cardRaffles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    width: 320px;
+    background-color: rgba(0, 157, 255, 0.446);
+    padding: 10px;
+    border-radius: 20px;
+
+}
+.topBarTable {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.table {
+    border-collapse: collapse;
+}
+.table tbody tr td{
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.225);
+}
+.table tbody tr td:hover{
+    color: white;
+    background-color: rgba(0, 68, 255, 0.583);
+}
+.cost {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.costRaffles {
+    color: black;
+    margin-top: 10px;
+    width: 100%;
+    text-align: center;
+}
+.btnCardRaffles {
+    margin: 10px;
+    width: 150px;
+    height: 30px;
+    border: none;
+    background-color: azure;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.btnCardRaffles:hover {
+
+    background-color: rgb(0, 255, 4);
+    color: white;
+}
+
+@media (max-width:960px) {  
+    #cardsRaffles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:790px) {  
+    #sideBar {
+        display: none;
+    }
+    #search input{
+        width: 90%;
+    }
+}
+@media (max-width:400px) {  
+    .cardRaffles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        width: 220px;
+        background-color: rgba(0, 157, 255, 0.446);
+        padding: 10px;
+        border-radius: 20px;
+    
+    }
+}
